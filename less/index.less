@@ -50,15 +50,123 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
-@bg-color: green;
-
-body{
-	background: @bg-color;
+h1{
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	.text-decor;
 }
+
+h2{
+	font-size: 2rem;
+	font-weight: bold;
+	.text-decor;
+}
+
+h3{
+	font-size: 1.6rem;
+	font-weight: bold;
+	.text-decor;
+	margin:0.5rem;
+	margin-top:1.4rem;
+	color:white;
+}
+
+p{
+	.text-decor;
+	font-size: 1.2rem;
+	margin:0.5rem;
+}
+
+ul{
+	margin: 1.4rem 0.5rem 0 2.2rem; 
+	list-style-type: square;
+	
+	li{
+	.text-decor;
+	font-size: 1.2rem;
+	margin:0.5rem 0;
+	}
+}
+
+.text-decor{
+	letter-spacing: 0.1rem;
+	word-spacing: 0.2rem;
+	font-family: Georgia, serif;
+	padding: 0 0.5rem ;
+	line-height: 1.3;
+}
+
+.content-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+.leftContainer{
+	display: flex;
+	flex-direction: column;
+	width:30%;
+	background: #003d74;
+
+	.name h3 {
+		text-align: center;
+	}
+
+	div{
+		margin: 0.5rem 0;
+		color: white;
+		
+		h2{
+			background: #002e58;
+			padding:0.6rem 1.8rem;;
+		}
+	}
+
+}
+
+.skillbox{
+	width: 100%;
+	border:100rem solid black;
+	border-bottom-right-radius: 100rem;
+}
+
+.skills{
+	text-align: right;
+	padding: 0.8rem;
+	color: white;
+	border-bottom-right-radius: 100rem;
+	font-size: 1rem;
+}
+
+.vsCode {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;} 
+.js {width: 65%; background-color: #f44336;} 
+.php {width: 60%; background-color: #808080;} 
+
+
+.rightContainer{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+
+
+
